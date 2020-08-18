@@ -1,0 +1,7 @@
+INSERT INTO users (id, name, email, password) VALUES (1, 'Jane Doe', 'jane.doe@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'), (2, 'John Smith', 'john.smith@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'), (3, 'Max Ricci', 'max.ricci@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
+
+INSERT INTO properties (id, owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night,parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code, active) VALUES (1, 2, 'Private Downtown Condo', 'description', 'url', 'url', 120, 1, 1, 2, 'Canada', 'City Ave', 'Toronto', 'Ontario', 'T15 3R3', true), (2, 1, 'Private Mansion with Pool', 'description', 'url', 'url', 700, 4, 4, 5, 'Canada', 'Rich Street', 'Toronto', 'Ontario', 'Y6U 2B4', true), (3, 2, 'Glamping Grounds', 'description', 'url', 'url', 70, 1, 2, 1, 'Canada', 'Woods Road', 'Muskoka', 'Ontario', 'M1T 6Q1', true);
+
+INSERT INTO reservations (id, start_date, end_date, property_id, guest_id) VALUES (1, '2019-08-15', '2019-08-25', 1, 3), (2, '2020-03-10', '2020-03-17', 2, 2), (3, '2018-07-01', '2018-07-04', 3, 1);
+
+INSERT INTO property_reviews (id, guest_id, property_id, reservation_id, rating, message) VALUES (1, 1, 3, 3, 4, 'message'), (2, 2, 2, 2, 5, 'message'), (3, 3, 1, 1, 5, 'message');
